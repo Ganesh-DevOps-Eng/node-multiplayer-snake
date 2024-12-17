@@ -31,11 +31,11 @@ node ('Ubuntu-app-agent'){
          sh "docker-compose up -d"	
       } */
 
-stage('Pull-image-server') {
-    steps {
-        sh 'ls -al'  // Verify basic shell command
-    }
-}
+        stage('Pull-image-server') {
+            steps {
+            sh 'ls -al'  // Verify basic shell command
+            }
+        }
 
     
     /* stage('DAST')
