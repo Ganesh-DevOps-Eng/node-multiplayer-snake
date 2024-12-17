@@ -25,11 +25,18 @@ node ('Ubuntu-app-agent'){
     } */
   
     
-    stage('Pull-image-server') {
+    /* stage('Pull-image-server') {
     
          sh "docker-compose down"
          sh "docker-compose up -d"	
-      }
+      } */
+
+stage('Pull-image-server') {
+    steps {
+        sh 'ls -al'  // Verify basic shell command
+    }
+}
+
     
     /* stage('DAST')
         {
